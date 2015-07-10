@@ -11,6 +11,7 @@
  - 学校名称で文字化けしているところを修正（Mac上では「麹」とか難しい漢字が文字化けした）
  - ファイルの改行をUnix, 文字コードをUTF-8に変換
 
+
 3. [地理院地図](http://maps.gsi.go.jp)のヘッダー域に住所を入れてEnterを押下すると左側に候補の地物が表示されるのでそれをクリックして地図を移動
 4. 地図上で目的の地物を探して、地図上の場所を中心地に移動すると、URLに緯度経度が表示されるので、これをCSVのlatitude/longitude列に入力
 5. CSVからGeoJSONという形式に変換するとGithub上で地図に表示することができる
@@ -20,3 +21,4 @@
 - [CSVからGeoJSONに変換するツール](http://csv.togeojson.com)
 - [オープンデータ保存・公開に便利なGithub](https://speakerdeck.com/benbalter/government-open-source-zheng-fu-yazi-zhi-ti-falseopunsosuhuo-yong)
 - [Github利用事例](http://wakayama.keizai.biz/headline/334)
+- GoogleのジオコーディングはGoogle Mapとの組み合わせが必要という利用制約があります。そのため、住所から緯度経度だけ求めて使う、といったことは禁止されています。[ここ](http://syncer.jp/how-to-use-geocoding-api)や[ここ](https://developers.google.com/maps/documentation/geocoding/?hl=ja)が参考になります。
